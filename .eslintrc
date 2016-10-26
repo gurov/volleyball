@@ -1,0 +1,48 @@
+{
+  "extends": "yandex",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {},
+  "globals": {
+    "io": true,
+    "document": true,
+    "lodash": true,
+    "jasmine": true,
+    "describe": true,
+    "it": true,
+    "beforeEach": true,
+    "expect": true,
+    "module": true,
+    "inject": true,
+    "spyOn": true
+  },
+  "rules": {
+    "strict": [
+      2,
+      "global"
+    ],
+    "no-undef": [2],
+    "new-cap": [0],
+    "no-unused-vars": [2, {"vars": "all", "args": "after-used"}],
+    "one-var": [2, {"initialized": "never"}],
+    "vars-on-top": [0],
+    "consistent-return": [2],
+    "radix": [2],
+    "space-infix-ops": [2],
+    "comma-spacing": [
+      2,
+      {
+        "before": false,
+        "after": true
+      }
+    ],
+    "comma-dangle": [2, "never"],
+    "no-console": [2],
+    "no-debugger": [2],
+    "no-dupe-keys": [2],
+    "no-empty": [2],
+    "operator-linebreak": [0]
+  }
+}
