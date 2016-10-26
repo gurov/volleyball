@@ -8,12 +8,10 @@ import 'angular-ui-router';
 import 'angular-localforage';
 import 'lodash';
 
-import {account} from './account/account';
 import {player} from './player/player';
 
 angular.module('app', [
     'ui.router',
     'LocalForageModule',
-    account.name,
     player.name
 ]);
