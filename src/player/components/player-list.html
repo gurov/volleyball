@@ -8,6 +8,7 @@
                 </span>
                 <input type="text"
                        class="form-control"
+                       ng-model="search"
                        placeholder="поиск">
             </div>
         </div>
@@ -16,7 +17,7 @@
 <table class="table table-striped">
     <thead>
     <tr>
-        <th style="width: 30px;"></th>
+        <th style="width: 30px;">№</th>
         <th>Фамилия</th>
         <th>Имя</th>
         <th>Голы</th>
@@ -24,7 +25,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr ng-repeat="player in $ctrl.players | orderBy: 'lastName'">
+    <tr ng-repeat="player in $ctrl.players | orderBy: 'lastName' | filter:search">
         <td><small class="text-muted">{{player.id}}</small></td>
         <td>{{player.lastName}}</td>
         <td>{{player.firstName}}</td>
