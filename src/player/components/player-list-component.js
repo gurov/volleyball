@@ -1,5 +1,4 @@
 import template from './player-list.html';
-import _ from 'lodash';
 
 class PlayerListController {
     constructor(playerService) {

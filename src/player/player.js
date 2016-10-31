@@ -2,7 +2,7 @@ import angular from 'angular';
 
 import {playerListComponent} from './components/player-list-component';
 import {playerAddComponent} from './components/player-add-component';
-import {PlayerService} from './player-service';
+import {PlayerService} from './../services/player-service';
 /**
  * @namespace player
  */

@@ -12,10 +12,12 @@ import 'angular-strap/dist/angular-strap.tpl';
 import 'lodash';
 
 import {player} from './player/player';
+import {game} from './game/game';
 
 angular.module('app', [
     'ui.router',
     'LocalForageModule',
     'mgcrea.ngStrap',
-    player.name
+    player.name,
+    game.name
 ]);

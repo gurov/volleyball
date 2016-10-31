@@ -9,7 +9,7 @@ export class PlayerService {
         return this.localForage.getItem('players');
     }
 
-    set (players) {
+    set(players) {
         return this.localForage.setItem('players', players);
     }
 
