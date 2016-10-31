@@ -6,6 +6,7 @@ class PlayerListController {
         this.playerService.get().then((response) => {
             this.players = response;
         });
+        this.test1 = 'Гуов';
     }
 
     create(lastName, firstName) {
@@ -14,8 +15,6 @@ class PlayerListController {
             lastName = firstName = '';
         });
     }
-
-
 }
 
 export const playerListComponent = {
