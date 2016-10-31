@@ -9,6 +9,10 @@ export class PlayerService {
         return this.localForage.getItem('players');
     }
 
+    set (players) {
+        return this.localForage.setItem('players', players);
+    }
+
     create(lastName, firstName) {
         return this.get().then((players) => {
             if (!players || players.length === 0) {

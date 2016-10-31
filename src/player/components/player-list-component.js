@@ -1,12 +1,22 @@
 import template from './player-list.html';
+import _ from 'lodash';
 
 class PlayerListController {
     constructor(playerService) {
         this.playerService = playerService;
-        this.playerService.get().then((response) => {
+        this.activePlayer = null;
+        this.players = null;
+        this.update();
+    }
+
+    update() {
+        return this.playerService.get().then((response) => {
             this.players = response;
         });
-        this.test1 = 'Гуов';
+    }
+
+    save() {
+        return this.playerService.set(this.players);
     }
 
     create(lastName, firstName) {
