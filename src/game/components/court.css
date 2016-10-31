@@ -1,0 +1,29 @@
+.grass {
+    background-color: #61995e;
+    padding: 20px;
+}
+.field {
+    background-color: #e19b4e;
+}
+.table-bordered > tbody > tr > td{
+    border: 2px solid #f5f5f5;
+}
+.table-bordered > tbody > tr > td.no-t{
+    border-top: none;
+}
+.table-bordered > tbody > tr > td.no-b{
+    border-bottom: none;
+}
+.table-bordered > tbody > tr > td.no-l{
+    border-left: none;
+}
+.table-bordered > tbody > tr > td.no-r{
+    border-right: none;
+}
+.table-bordered > tbody > tr > td.b-l{
+    border-left: 4px solid #f5f5f5;
+}
+.table-bordered > tbody > tr > td.b-r{
+    border-right: 4px solid #f5f5f5;
+}
+

@@ -7,7 +7,7 @@ import {GameService} from './../services/game-service.js';
  */
 export const game = angular.module('game', ['ui.router'])
     .service('gameService', GameService)
-    .component('cCourtList', courtComponent)
+    .component('cCourt', courtComponent)
     .config(function ($stateProvider) {
         $stateProvider
             .state('game', {

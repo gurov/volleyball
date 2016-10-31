@@ -1,4 +1,5 @@
 import template from './court.html';
+import './court.css';
 
 class CourtController {
     constructor(gameService) {
